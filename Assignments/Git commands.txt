@@ -1,0 +1,30 @@
+Git Commands Assignment
+- Command to initialize git repository
+git init
+- Command to clone remote repository
+git clone repo_path
+- Command to stage all changes
+git add .
+- Command to view state of working directory and staging area
+git status log
+- Command to create new branch
+ git branch <new-branch>
+- Command to change branch
+git checkout branch_name
+- Command to clean staging area
+git rm
+- Command to get commits and changes from remote branch (It should not merge changes in
+current branch).
+git fetch [remote-name]
+- Command to get commits and changes from remote branch (It should merge changes in
+current branch).
+ git fetch origin master
+git merge origin/master
+- Command to cherry pick commit which SHA => 092018283103810930
+git cherry-pick -x 092018283103810930
+- Command to push branch
+it push –u origin <branch name>
+- Command to delete remote branch
+git push origin -d branch-name
+- Command to do iterative rebase
+ git rebase -i HEAD~3
